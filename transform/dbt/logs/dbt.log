@@ -36,3 +36,773 @@ Runtime Error
 [0m19:18:04.748903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95F67D6A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95F67D910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95F1474A0>]}
 [0m19:18:04.748903 [debug] [MainThread]: Flushing usage events
 [0m19:18:05.120191 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:23:37.589169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002441370E0C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024416623500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244166238F0>]}
+
+
+============================== 19:23:37.593170 | eb5bb3b8-a385-4cc1-af22-7003d82c3880 ==============================
+[0m19:23:37.593170 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:23:37.594168 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'transform/dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt deps --project-dir transform/dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'transform\\dbt\\logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m19:23:37.684168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eb5bb3b8-a385-4cc1-af22-7003d82c3880', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244168F6A20>]}
+[0m19:23:37.708169 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:23:37.709169 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:23:37.710170 [debug] [MainThread]: Command `dbt deps` succeeded at 19:23:37.710170 after 0.21 seconds
+[0m19:23:37.710170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024416266DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244166205F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024415CCE750>]}
+[0m19:23:37.711169 [debug] [MainThread]: Flushing usage events
+[0m19:23:38.035878 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:23:39.941933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DC5D2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DC5D33E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DC5D06B0>]}
+
+
+============================== 19:23:39.945933 | fcffd45a-395a-42a4-9441-f95b114db6f1 ==============================
+[0m19:23:39.945933 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:23:39.946933 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run --project-dir transform/dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'transform\\dbt\\logs', 'profiles_dir': 'transform/dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m19:23:40.096926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fcffd45a-395a-42a4-9441-f95b114db6f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DDC78530>]}
+[0m19:23:40.137999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fcffd45a-395a-42a4-9441-f95b114db6f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DC91E1B0>]}
+[0m19:23:40.139005 [info ] [MainThread]: Registered adapter: duckdb=1.8.0
+[0m19:23:40.303935 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:23:40.304935 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:23:40.305934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fcffd45a-395a-42a4-9441-f95b114db6f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DDC99820>]}
+[0m19:23:41.129933 [error] [MainThread]: Encountered an error:
+
+[0m19:23:41.132927 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 373, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 389, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 416, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\parser\manifest.py", line 2123, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\parser\manifest.py", line 320, in get_full_manifest
+    manifest = loader.load()
+               ^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\parser\manifest.py", line 389, in load
+    self.load_and_parse_macros(project_parser_files)
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\parser\manifest.py", line 692, in load_and_parse_macros
+    parser.parse_file(block)
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\parser\macros.py", line 136, in parse_file
+    for node in self.parse_unparsed_macros(base_node):
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\parser\macros.py", line 72, in parse_unparsed_macros
+    ast = jinja.parse(block.full_block)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 627, in parse
+    parsed: jinja2.nodes.Template = get_environment().parse(str(string))
+                                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 592, in get_environment
+    env = env_cls(**args)
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\jinja2\sandbox.py", line 243, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\jinja2\environment.py", line 365, in __init__
+    self.extensions = load_extensions(self, extensions)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\jinja2\environment.py", line 119, in load_extensions
+    extension = t.cast(t.Type["Extension"], import_string(extension))
+                       ~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\elang\AppData\Local\Programs\Python\Python312\Lib\typing.py", line 378, in inner
+    @functools.wraps(func)
+    
+KeyboardInterrupt
+
+[0m19:23:41.134935 [debug] [MainThread]: Command `dbt run` failed at 19:23:41.134935 after 1.28 seconds
+[0m19:23:41.134935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DCBC73B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DDC6F050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DDC6E8D0>]}
+[0m19:23:41.135933 [debug] [MainThread]: Flushing usage events
+[0m19:23:41.699285 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:00.301162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194CF17FFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194CEDD4A40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194CF17D670>]}
+
+
+============================== 19:27:00.305162 | dc0ae506-c526-473c-a1c3-1a96da850965 ==============================
+[0m19:27:00.305162 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:27:00.306162 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'transform/dbt', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run --project-dir transform/dbt --profiles-dir transform/dbt', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'log_path': 'transform\\dbt\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m19:27:00.457169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc0ae506-c526-473c-a1c3-1a96da850965', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194CF7772C0>]}
+[0m19:27:00.501161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dc0ae506-c526-473c-a1c3-1a96da850965', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194CF793DA0>]}
+[0m19:27:00.502176 [info ] [MainThread]: Registered adapter: duckdb=1.8.0
+[0m19:27:00.659161 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:27:00.660162 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:27:00.661161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'dc0ae506-c526-473c-a1c3-1a96da850965', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194D095EE10>]}
+[0m19:27:01.502896 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.logpulse
+[0m19:27:01.509897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dc0ae506-c526-473c-a1c3-1a96da850965', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194D0F2F1D0>]}
+[0m19:27:01.561897 [debug] [MainThread]: Wrote artifact WritableManifest to transform\dbt\target\manifest.json
+[0m19:27:01.563899 [debug] [MainThread]: Wrote artifact SemanticManifest to transform\dbt\target\semantic_manifest.json
+[0m19:27:01.585215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dc0ae506-c526-473c-a1c3-1a96da850965', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194D0C431A0>]}
+[0m19:27:01.585215 [info ] [MainThread]: Found 1 model, 6 data tests, 1 source, 426 macros
+[0m19:27:01.586214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc0ae506-c526-473c-a1c3-1a96da850965', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194D0F2D880>]}
+[0m19:27:01.587226 [info ] [MainThread]: 
+[0m19:27:01.587226 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:27:01.588216 [info ] [MainThread]: 
+[0m19:27:01.589215 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m19:27:01.589215 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_logpulse'
+[0m19:27:02.473375 [debug] [ThreadPool]: Using duckdb connection "list_logpulse"
+[0m19:27:02.474376 [debug] [ThreadPool]: On list_logpulse: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "connection_name": "list_logpulse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"logpulse"'
+    
+  
+  
+[0m19:27:02.474376 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:27:02.482374 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "connection_name": "list_logpulse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"logpulse"'
+    
+  
+  
+[0m19:27:02.482374 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m19:27:02.483376 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:27:02.484374 [debug] [MainThread]: Connection 'list_logpulse' was properly closed.
+[0m19:27:02.484374 [info ] [MainThread]: 
+[0m19:27:02.484374 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.90 seconds (0.90s).
+[0m19:27:02.485375 [error] [MainThread]: Encountered an error:
+Runtime Error
+  IO Error: Cannot open file "c:\users\elang\desktop\netlfix-behavior-pipeline\log_pulse\.data\logpulse.duckdb": The system cannot find the path specified.
+  
+[0m19:27:02.486374 [debug] [MainThread]: Command `dbt run` failed at 19:27:02.486374 after 2.28 seconds
+[0m19:27:02.486374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194CF7767E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194D086D4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194D0F2E510>]}
+[0m19:27:02.486374 [debug] [MainThread]: Flushing usage events
+[0m19:27:03.146003 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:12.711543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF3164DAC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF3164E0C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF3168FE60>]}
+
+
+============================== 19:27:12.715544 | a220186b-4e3b-4da8-8b69-3a450672f4dc ==============================
+[0m19:27:12.715544 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:27:12.716543 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'transform/dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run --project-dir transform/dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'empty': 'False', 'printer_width': '80', 'log_path': 'transform\\dbt\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m19:27:12.873556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a220186b-4e3b-4da8-8b69-3a450672f4dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF32DA00B0>]}
+[0m19:27:12.920543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a220186b-4e3b-4da8-8b69-3a450672f4dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF31A727E0>]}
+[0m19:27:12.922542 [info ] [MainThread]: Registered adapter: duckdb=1.8.0
+[0m19:27:13.078544 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:27:13.181542 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:27:13.182549 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:27:13.186552 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.logpulse
+[0m19:27:13.212544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a220186b-4e3b-4da8-8b69-3a450672f4dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF32D2E900>]}
+[0m19:27:13.264543 [debug] [MainThread]: Wrote artifact WritableManifest to transform\dbt\target\manifest.json
+[0m19:27:13.266553 [debug] [MainThread]: Wrote artifact SemanticManifest to transform\dbt\target\semantic_manifest.json
+[0m19:27:13.286746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a220186b-4e3b-4da8-8b69-3a450672f4dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF333FC500>]}
+[0m19:27:13.286746 [info ] [MainThread]: Found 1 model, 6 data tests, 1 source, 426 macros
+[0m19:27:13.287749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a220186b-4e3b-4da8-8b69-3a450672f4dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF32CE49B0>]}
+[0m19:27:13.288748 [info ] [MainThread]: 
+[0m19:27:13.289745 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:27:13.289745 [info ] [MainThread]: 
+[0m19:27:13.289745 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m19:27:13.290747 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_logpulse'
+[0m19:27:13.349746 [debug] [ThreadPool]: Using duckdb connection "list_logpulse"
+[0m19:27:13.350745 [debug] [ThreadPool]: On list_logpulse: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "connection_name": "list_logpulse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"logpulse"'
+    
+  
+  
+[0m19:27:13.351746 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:27:13.362744 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m19:27:13.364745 [debug] [ThreadPool]: On list_logpulse: Close
+[0m19:27:13.366745 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_logpulse, now create_logpulse_main)
+[0m19:27:13.366745 [debug] [ThreadPool]: Creating schema "database: "logpulse"
+schema: "main"
+"
+[0m19:27:13.370746 [debug] [ThreadPool]: Using duckdb connection "create_logpulse_main"
+[0m19:27:13.371747 [debug] [ThreadPool]: On create_logpulse_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "connection_name": "create_logpulse_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='logpulse'
+        and type='sqlite'
+    
+  
+[0m19:27:13.371747 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:27:13.383757 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m19:27:13.384746 [debug] [ThreadPool]: Using duckdb connection "create_logpulse_main"
+[0m19:27:13.384746 [debug] [ThreadPool]: On create_logpulse_main: BEGIN
+[0m19:27:13.385745 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:27:13.385745 [debug] [ThreadPool]: Using duckdb connection "create_logpulse_main"
+[0m19:27:13.385745 [debug] [ThreadPool]: On create_logpulse_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "connection_name": "create_logpulse_main"} */
+
+    
+    
+        create schema if not exists "logpulse"."main"
+    
+[0m19:27:13.386752 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:27:13.386752 [debug] [ThreadPool]: On create_logpulse_main: COMMIT
+[0m19:27:13.387752 [debug] [ThreadPool]: Using duckdb connection "create_logpulse_main"
+[0m19:27:13.387752 [debug] [ThreadPool]: On create_logpulse_main: COMMIT
+[0m19:27:13.388746 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:27:13.388746 [debug] [ThreadPool]: On create_logpulse_main: Close
+[0m19:27:13.390755 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_logpulse_main'
+[0m19:27:13.394747 [debug] [ThreadPool]: Using duckdb connection "list_logpulse_main"
+[0m19:27:13.394747 [debug] [ThreadPool]: On list_logpulse_main: BEGIN
+[0m19:27:13.394747 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:27:13.399745 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m19:27:13.400745 [debug] [ThreadPool]: Using duckdb connection "list_logpulse_main"
+[0m19:27:13.400745 [debug] [ThreadPool]: On list_logpulse_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "connection_name": "list_logpulse_main"} */
+select
+      'logpulse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'logpulse'
+  
+[0m19:27:13.422745 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m19:27:13.423753 [debug] [ThreadPool]: On list_logpulse_main: ROLLBACK
+[0m19:27:13.424745 [debug] [ThreadPool]: Failed to rollback 'list_logpulse_main'
+[0m19:27:13.424745 [debug] [ThreadPool]: On list_logpulse_main: Close
+[0m19:27:13.427753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a220186b-4e3b-4da8-8b69-3a450672f4dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF3393E6F0>]}
+[0m19:27:13.427753 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:27:13.428745 [debug] [MainThread]: On master: BEGIN
+[0m19:27:13.428745 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:27:13.433744 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m19:27:13.433744 [debug] [MainThread]: On master: COMMIT
+[0m19:27:13.433744 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:27:13.434747 [debug] [MainThread]: On master: COMMIT
+[0m19:27:13.434747 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:27:13.435745 [debug] [MainThread]: On master: Close
+[0m19:27:13.439745 [debug] [Thread-1 (]: Began running node model.logpulse.stg_auth_events
+[0m19:27:13.440745 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_auth_events ............................... [RUN]
+[0m19:27:13.441745 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.logpulse.stg_auth_events'
+[0m19:27:13.441745 [debug] [Thread-1 (]: Began compiling node model.logpulse.stg_auth_events
+[0m19:27:13.445752 [debug] [Thread-1 (]: Writing injected SQL for node "model.logpulse.stg_auth_events"
+[0m19:27:13.447745 [debug] [Thread-1 (]: Began executing node model.logpulse.stg_auth_events
+[0m19:27:13.474752 [debug] [Thread-1 (]: Writing runtime sql for node "model.logpulse.stg_auth_events"
+[0m19:27:13.476747 [debug] [Thread-1 (]: Using duckdb connection "model.logpulse.stg_auth_events"
+[0m19:27:13.476747 [debug] [Thread-1 (]: On model.logpulse.stg_auth_events: BEGIN
+[0m19:27:13.476747 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:27:13.481745 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m19:27:13.482744 [debug] [Thread-1 (]: Using duckdb connection "model.logpulse.stg_auth_events"
+[0m19:27:13.482744 [debug] [Thread-1 (]: On model.logpulse.stg_auth_events: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "model.logpulse.stg_auth_events"} */
+
+  
+  create view "logpulse"."main"."stg_auth_events__dbt_tmp" as (
+    
+
+WITH raw AS (
+  SELECT *
+  FROM read_json_auto('lake/raw/auth_events_v1.ndjson')
+)
+SELECT
+  ts,
+  user_id,
+  ip,
+  user_agent,
+  action,
+  result
+FROM raw
+  );
+
+[0m19:27:13.501745 [debug] [Thread-1 (]: SQL status: OK in 0.018 seconds
+[0m19:27:13.505746 [debug] [Thread-1 (]: Using duckdb connection "model.logpulse.stg_auth_events"
+[0m19:27:13.506747 [debug] [Thread-1 (]: On model.logpulse.stg_auth_events: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "model.logpulse.stg_auth_events"} */
+alter view "logpulse"."main"."stg_auth_events__dbt_tmp" rename to "stg_auth_events"
+[0m19:27:13.506747 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m19:27:13.515752 [debug] [Thread-1 (]: On model.logpulse.stg_auth_events: COMMIT
+[0m19:27:13.516751 [debug] [Thread-1 (]: Using duckdb connection "model.logpulse.stg_auth_events"
+[0m19:27:13.516751 [debug] [Thread-1 (]: On model.logpulse.stg_auth_events: COMMIT
+[0m19:27:13.520950 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m19:27:13.523962 [debug] [Thread-1 (]: Using duckdb connection "model.logpulse.stg_auth_events"
+[0m19:27:13.524962 [debug] [Thread-1 (]: On model.logpulse.stg_auth_events: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "model.logpulse.stg_auth_events"} */
+drop view if exists "logpulse"."main"."stg_auth_events__dbt_backup" cascade
+[0m19:27:13.524962 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m19:27:13.526981 [debug] [Thread-1 (]: On model.logpulse.stg_auth_events: Close
+[0m19:27:13.536597 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a220186b-4e3b-4da8-8b69-3a450672f4dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF33903FE0>]}
+[0m19:27:13.537591 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_auth_events .......................... [[32mOK[0m in 0.09s]
+[0m19:27:13.538589 [debug] [Thread-1 (]: Finished running node model.logpulse.stg_auth_events
+[0m19:27:13.539591 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:27:13.539591 [debug] [MainThread]: On master: BEGIN
+[0m19:27:13.540591 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:27:13.553599 [debug] [MainThread]: SQL status: OK in 0.013 seconds
+[0m19:27:13.554595 [debug] [MainThread]: On master: COMMIT
+[0m19:27:13.554595 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:27:13.555592 [debug] [MainThread]: On master: COMMIT
+[0m19:27:13.555592 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:27:13.556590 [debug] [MainThread]: On master: Close
+[0m19:27:13.557590 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:27:13.558591 [debug] [MainThread]: Connection 'create_logpulse_main' was properly closed.
+[0m19:27:13.558591 [debug] [MainThread]: Connection 'list_logpulse_main' was properly closed.
+[0m19:27:13.559590 [debug] [MainThread]: Connection 'model.logpulse.stg_auth_events' was properly closed.
+[0m19:27:13.559590 [info ] [MainThread]: 
+[0m19:27:13.560590 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.27 seconds (0.27s).
+[0m19:27:13.560590 [debug] [MainThread]: Command end result
+[0m19:27:13.575589 [debug] [MainThread]: Wrote artifact WritableManifest to transform\dbt\target\manifest.json
+[0m19:27:13.578591 [debug] [MainThread]: Wrote artifact SemanticManifest to transform\dbt\target\semantic_manifest.json
+[0m19:27:13.585590 [debug] [MainThread]: Wrote artifact RunExecutionResult to transform\dbt\target\run_results.json
+[0m19:27:13.586590 [info ] [MainThread]: 
+[0m19:27:13.586590 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:27:13.587591 [info ] [MainThread]: 
+[0m19:27:13.587591 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m19:27:13.588591 [debug] [MainThread]: Command `dbt run` succeeded at 19:27:13.588591 after 0.96 seconds
+[0m19:27:13.589592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF316C8B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF31A73500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF2E9FEE70>]}
+[0m19:27:13.590591 [debug] [MainThread]: Flushing usage events
+[0m19:27:14.142954 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:16.233792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C02991D6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C02991C9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C02991FC20>]}
+
+
+============================== 19:27:16.237798 | 581a7335-56da-4a80-9ed7-efa84bdc20e2 ==============================
+[0m19:27:16.237798 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:27:16.238793 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt test --project-dir transform/dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'transform\\dbt\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'transform/dbt'}
+[0m19:27:16.340794 [error] [MainThread]: Encountered an error:
+
+[0m19:27:16.343793 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\cli\requires.py", line 290, in wrapper
+    project = load_project(
+              ^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\config\runtime.py", line 58, in load_project
+    project = Project.from_project_root(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\config\project.py", line 771, in from_project_root
+    return partial.render(renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\config\project.py", line 337, in render
+    return self.create_project(rendered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\config\project.py", line 389, in create_project
+    ProjectContract.validate(rendered.project_dict)
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt\contracts\project.py", line 305, in validate
+    super().validate(data)
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt_common\dataclass_schema.py", line 95, in validate
+    json_schema = cls.json_schema()
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\dbt_common\dataclass_schema.py", line 89, in json_schema
+    json_schema_obj = build_json_schema(cls)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\builder.py", line 45, in build_json_schema
+    schema = get_schema(instance, context, with_dialect_uri=with_dialect_uri)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 268, in get_schema
+    schema = schema_creator(instance, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 359, in on_dataclass
+    f_schema = get_schema(f_instance, ctx)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 268, in get_schema
+    schema = schema_creator(instance, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 763, in on_collection
+    _get_schema_or_none(instance.derive(type=args[0]), ctx)
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 282, in _get_schema_or_none
+    schema = get_schema(instance, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 268, in get_schema
+    schema = schema_creator(instance, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 418, in on_special_typing_primitive
+    anyOf=[get_schema(instance.derive(type=arg), ctx) for arg in args]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 268, in get_schema
+    schema = schema_creator(instance, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 353, in on_dataclass
+    for f_name, f_type, has_default, f_default in instance.fields():
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 188, in fields
+    f_default = _default(f_type, f_default, self.get_self_config())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\Desktop\netlfix-behavior-pipeline\Log_Pulse\.venv\Lib\site-packages\mashumaro\jsonschema\schema.py", line 289, in _default
+    @dataclass
+     ^^^^^^^^^
+  File "C:\Users\elang\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 1266, in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+  File "C:\Users\elang\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 1256, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 1063, in _process_class
+    _init_fn(all_init_fields,
+  File "C:\Users\elang\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 619, in _init_fn
+    return _create_fn('__init__',
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elang\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 473, in _create_fn
+    exec(txt, globals, ns)
+KeyboardInterrupt
+
+[0m19:27:16.344800 [debug] [MainThread]: Command `dbt test` failed at 19:27:16.344800 after 0.20 seconds
+[0m19:27:16.345799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C029DBE300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C02B2EB410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C02AF77E00>]}
+[0m19:27:16.345799 [debug] [MainThread]: Flushing usage events
+[0m19:27:16.561337 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:22.832017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C13C23830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C139714F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C11B3BAD0>]}
+
+
+============================== 19:27:22.836018 | f799a66f-0c38-4283-95a3-6725c771eeb3 ==============================
+[0m19:27:22.836018 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:27:22.837017 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt test --project-dir transform/dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'transform\\dbt\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'transform/dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m19:27:22.993018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f799a66f-0c38-4283-95a3-6725c771eeb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C11317080>]}
+[0m19:27:23.035017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f799a66f-0c38-4283-95a3-6725c771eeb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C113D8A40>]}
+[0m19:27:23.036019 [info ] [MainThread]: Registered adapter: duckdb=1.8.0
+[0m19:27:23.199024 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:27:23.294017 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:27:23.295019 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:27:23.299016 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.logpulse
+[0m19:27:23.328017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f799a66f-0c38-4283-95a3-6725c771eeb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C158ECB30>]}
+[0m19:27:23.381017 [debug] [MainThread]: Wrote artifact WritableManifest to transform\dbt\target\manifest.json
+[0m19:27:23.383025 [debug] [MainThread]: Wrote artifact SemanticManifest to transform\dbt\target\semantic_manifest.json
+[0m19:27:23.410210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f799a66f-0c38-4283-95a3-6725c771eeb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C12E14B00>]}
+[0m19:27:23.411219 [info ] [MainThread]: Found 1 model, 6 data tests, 1 source, 426 macros
+[0m19:27:23.411219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f799a66f-0c38-4283-95a3-6725c771eeb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C15DD2A20>]}
+[0m19:27:23.413210 [info ] [MainThread]: 
+[0m19:27:23.413210 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:27:23.413210 [info ] [MainThread]: 
+[0m19:27:23.414210 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m19:27:23.415210 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_logpulse_main'
+[0m19:27:23.472211 [debug] [ThreadPool]: Using duckdb connection "list_logpulse_main"
+[0m19:27:23.472211 [debug] [ThreadPool]: On list_logpulse_main: BEGIN
+[0m19:27:23.473211 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:27:23.480210 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m19:27:23.480210 [debug] [ThreadPool]: Using duckdb connection "list_logpulse_main"
+[0m19:27:23.481210 [debug] [ThreadPool]: On list_logpulse_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "connection_name": "list_logpulse_main"} */
+select
+      'logpulse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'logpulse'
+  
+[0m19:27:23.503209 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m19:27:23.504211 [debug] [ThreadPool]: On list_logpulse_main: ROLLBACK
+[0m19:27:23.505210 [debug] [ThreadPool]: Failed to rollback 'list_logpulse_main'
+[0m19:27:23.506211 [debug] [ThreadPool]: On list_logpulse_main: Close
+[0m19:27:23.509211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f799a66f-0c38-4283-95a3-6725c771eeb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C15CEAF60>]}
+[0m19:27:23.509211 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:27:23.510210 [debug] [MainThread]: On master: BEGIN
+[0m19:27:23.510210 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:27:23.515220 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m19:27:23.515220 [debug] [MainThread]: On master: COMMIT
+[0m19:27:23.516210 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:27:23.516210 [debug] [MainThread]: On master: COMMIT
+[0m19:27:23.516210 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:27:23.517210 [debug] [MainThread]: On master: Close
+[0m19:27:23.521210 [debug] [Thread-1 (]: Began running node test.logpulse.not_null_stg_auth_events_action.1e15679799
+[0m19:27:23.521210 [debug] [Thread-2 (]: Began running node test.logpulse.not_null_stg_auth_events_ip.759418a755
+[0m19:27:23.521210 [debug] [Thread-3 (]: Began running node test.logpulse.not_null_stg_auth_events_result.579d32dfcb
+[0m19:27:23.522211 [debug] [Thread-4 (]: Began running node test.logpulse.not_null_stg_auth_events_ts.1db33bee50
+[0m19:27:23.522211 [info ] [Thread-1 (]: 1 of 6 START test not_null_stg_auth_events_action .............................. [RUN]
+[0m19:27:23.522211 [info ] [Thread-2 (]: 2 of 6 START test not_null_stg_auth_events_ip .................................. [RUN]
+[0m19:27:23.523210 [info ] [Thread-3 (]: 3 of 6 START test not_null_stg_auth_events_result .............................. [RUN]
+[0m19:27:23.524210 [debug] [Thread-1 (]: Acquiring new duckdb connection 'test.logpulse.not_null_stg_auth_events_action.1e15679799'
+[0m19:27:23.523210 [info ] [Thread-4 (]: 4 of 6 START test not_null_stg_auth_events_ts .................................. [RUN]
+[0m19:27:23.524210 [debug] [Thread-2 (]: Acquiring new duckdb connection 'test.logpulse.not_null_stg_auth_events_ip.759418a755'
+[0m19:27:23.525210 [debug] [Thread-3 (]: Acquiring new duckdb connection 'test.logpulse.not_null_stg_auth_events_result.579d32dfcb'
+[0m19:27:23.525210 [debug] [Thread-1 (]: Began compiling node test.logpulse.not_null_stg_auth_events_action.1e15679799
+[0m19:27:23.526210 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.logpulse.not_null_stg_auth_events_ts.1db33bee50'
+[0m19:27:23.526210 [debug] [Thread-2 (]: Began compiling node test.logpulse.not_null_stg_auth_events_ip.759418a755
+[0m19:27:23.526210 [debug] [Thread-3 (]: Began compiling node test.logpulse.not_null_stg_auth_events_result.579d32dfcb
+[0m19:27:23.537217 [debug] [Thread-1 (]: Writing injected SQL for node "test.logpulse.not_null_stg_auth_events_action.1e15679799"
+[0m19:27:23.538210 [debug] [Thread-4 (]: Began compiling node test.logpulse.not_null_stg_auth_events_ts.1db33bee50
+[0m19:27:23.541217 [debug] [Thread-2 (]: Writing injected SQL for node "test.logpulse.not_null_stg_auth_events_ip.759418a755"
+[0m19:27:23.544211 [debug] [Thread-3 (]: Writing injected SQL for node "test.logpulse.not_null_stg_auth_events_result.579d32dfcb"
+[0m19:27:23.547211 [debug] [Thread-4 (]: Writing injected SQL for node "test.logpulse.not_null_stg_auth_events_ts.1db33bee50"
+[0m19:27:23.548210 [debug] [Thread-1 (]: Began executing node test.logpulse.not_null_stg_auth_events_action.1e15679799
+[0m19:27:23.556210 [debug] [Thread-2 (]: Began executing node test.logpulse.not_null_stg_auth_events_ip.759418a755
+[0m19:27:23.561209 [debug] [Thread-1 (]: Writing runtime sql for node "test.logpulse.not_null_stg_auth_events_action.1e15679799"
+[0m19:27:23.563210 [debug] [Thread-2 (]: Writing runtime sql for node "test.logpulse.not_null_stg_auth_events_ip.759418a755"
+[0m19:27:23.563210 [debug] [Thread-4 (]: Began executing node test.logpulse.not_null_stg_auth_events_ts.1db33bee50
+[0m19:27:23.564211 [debug] [Thread-3 (]: Began executing node test.logpulse.not_null_stg_auth_events_result.579d32dfcb
+[0m19:27:23.566211 [debug] [Thread-4 (]: Writing runtime sql for node "test.logpulse.not_null_stg_auth_events_ts.1db33bee50"
+[0m19:27:23.568210 [debug] [Thread-3 (]: Writing runtime sql for node "test.logpulse.not_null_stg_auth_events_result.579d32dfcb"
+[0m19:27:23.568210 [debug] [Thread-2 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_ip.759418a755"
+[0m19:27:23.569210 [debug] [Thread-1 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_action.1e15679799"
+[0m19:27:23.570210 [debug] [Thread-4 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_ts.1db33bee50"
+[0m19:27:23.570210 [debug] [Thread-2 (]: On test.logpulse.not_null_stg_auth_events_ip.759418a755: BEGIN
+[0m19:27:23.570210 [debug] [Thread-1 (]: On test.logpulse.not_null_stg_auth_events_action.1e15679799: BEGIN
+[0m19:27:23.571211 [debug] [Thread-3 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_result.579d32dfcb"
+[0m19:27:23.572212 [debug] [Thread-4 (]: On test.logpulse.not_null_stg_auth_events_ts.1db33bee50: BEGIN
+[0m19:27:23.572212 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:27:23.573209 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:27:23.573209 [debug] [Thread-3 (]: On test.logpulse.not_null_stg_auth_events_result.579d32dfcb: BEGIN
+[0m19:27:23.573209 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:27:23.579212 [debug] [Thread-2 (]: SQL status: OK in 0.007 seconds
+[0m19:27:23.580212 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m19:27:23.580212 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:27:23.581211 [debug] [Thread-4 (]: SQL status: OK in 0.007 seconds
+[0m19:27:23.581211 [debug] [Thread-2 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_ip.759418a755"
+[0m19:27:23.581211 [debug] [Thread-1 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_action.1e15679799"
+[0m19:27:23.582212 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m19:27:23.582212 [debug] [Thread-4 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_ts.1db33bee50"
+[0m19:27:23.582212 [debug] [Thread-2 (]: On test.logpulse.not_null_stg_auth_events_ip.759418a755: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "test.logpulse.not_null_stg_auth_events_ip.759418a755"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ip
+from "logpulse"."main"."stg_auth_events"
+where ip is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:27:23.583211 [debug] [Thread-1 (]: On test.logpulse.not_null_stg_auth_events_action.1e15679799: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "test.logpulse.not_null_stg_auth_events_action.1e15679799"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select action
+from "logpulse"."main"."stg_auth_events"
+where action is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:27:23.583211 [debug] [Thread-3 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_result.579d32dfcb"
+[0m19:27:23.584211 [debug] [Thread-4 (]: On test.logpulse.not_null_stg_auth_events_ts.1db33bee50: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "test.logpulse.not_null_stg_auth_events_ts.1db33bee50"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ts
+from "logpulse"."main"."stg_auth_events"
+where ts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:27:23.585212 [debug] [Thread-3 (]: On test.logpulse.not_null_stg_auth_events_result.579d32dfcb: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "test.logpulse.not_null_stg_auth_events_result.579d32dfcb"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select result
+from "logpulse"."main"."stg_auth_events"
+where result is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:27:23.609209 [debug] [Thread-3 (]: SQL status: OK in 0.024 seconds
+[0m19:27:23.613210 [debug] [Thread-3 (]: On test.logpulse.not_null_stg_auth_events_result.579d32dfcb: ROLLBACK
+[0m19:27:23.614210 [debug] [Thread-3 (]: Failed to rollback 'test.logpulse.not_null_stg_auth_events_result.579d32dfcb'
+[0m19:27:23.614210 [debug] [Thread-3 (]: On test.logpulse.not_null_stg_auth_events_result.579d32dfcb: Close
+[0m19:27:23.615210 [info ] [Thread-3 (]: 3 of 6 PASS not_null_stg_auth_events_result .................................... [[32mPASS[0m in 0.09s]
+[0m19:27:23.615210 [debug] [Thread-3 (]: Finished running node test.logpulse.not_null_stg_auth_events_result.579d32dfcb
+[0m19:27:23.616209 [debug] [Thread-3 (]: Began running node test.logpulse.not_null_stg_auth_events_user_agent.f556013c32
+[0m19:27:23.616209 [info ] [Thread-3 (]: 5 of 6 START test not_null_stg_auth_events_user_agent .......................... [RUN]
+[0m19:27:23.617209 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.logpulse.not_null_stg_auth_events_result.579d32dfcb, now test.logpulse.not_null_stg_auth_events_user_agent.f556013c32)
+[0m19:27:23.617209 [debug] [Thread-3 (]: Began compiling node test.logpulse.not_null_stg_auth_events_user_agent.f556013c32
+[0m19:27:23.620210 [debug] [Thread-3 (]: Writing injected SQL for node "test.logpulse.not_null_stg_auth_events_user_agent.f556013c32"
+[0m19:27:23.621210 [debug] [Thread-4 (]: SQL status: OK in 0.036 seconds
+[0m19:27:23.623210 [debug] [Thread-4 (]: On test.logpulse.not_null_stg_auth_events_ts.1db33bee50: ROLLBACK
+[0m19:27:23.623210 [debug] [Thread-3 (]: Began executing node test.logpulse.not_null_stg_auth_events_user_agent.f556013c32
+[0m19:27:23.624211 [debug] [Thread-4 (]: Failed to rollback 'test.logpulse.not_null_stg_auth_events_ts.1db33bee50'
+[0m19:27:23.626210 [debug] [Thread-3 (]: Writing runtime sql for node "test.logpulse.not_null_stg_auth_events_user_agent.f556013c32"
+[0m19:27:23.627209 [debug] [Thread-2 (]: SQL status: OK in 0.042 seconds
+[0m19:27:23.627209 [debug] [Thread-1 (]: SQL status: OK in 0.042 seconds
+[0m19:27:23.627209 [debug] [Thread-4 (]: On test.logpulse.not_null_stg_auth_events_ts.1db33bee50: Close
+[0m19:27:23.628210 [debug] [Thread-2 (]: On test.logpulse.not_null_stg_auth_events_ip.759418a755: ROLLBACK
+[0m19:27:23.630212 [debug] [Thread-1 (]: On test.logpulse.not_null_stg_auth_events_action.1e15679799: ROLLBACK
+[0m19:27:23.630212 [debug] [Thread-3 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_user_agent.f556013c32"
+[0m19:27:23.630212 [info ] [Thread-4 (]: 4 of 6 PASS not_null_stg_auth_events_ts ........................................ [[32mPASS[0m in 0.11s]
+[0m19:27:23.631210 [debug] [Thread-2 (]: Failed to rollback 'test.logpulse.not_null_stg_auth_events_ip.759418a755'
+[0m19:27:23.632210 [debug] [Thread-1 (]: Failed to rollback 'test.logpulse.not_null_stg_auth_events_action.1e15679799'
+[0m19:27:23.632210 [debug] [Thread-3 (]: On test.logpulse.not_null_stg_auth_events_user_agent.f556013c32: BEGIN
+[0m19:27:23.633210 [debug] [Thread-4 (]: Finished running node test.logpulse.not_null_stg_auth_events_ts.1db33bee50
+[0m19:27:23.633210 [debug] [Thread-2 (]: On test.logpulse.not_null_stg_auth_events_ip.759418a755: Close
+[0m19:27:23.634211 [debug] [Thread-1 (]: On test.logpulse.not_null_stg_auth_events_action.1e15679799: Close
+[0m19:27:23.634211 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:27:23.634211 [debug] [Thread-4 (]: Began running node test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa
+[0m19:27:23.635210 [info ] [Thread-2 (]: 2 of 6 PASS not_null_stg_auth_events_ip ........................................ [[32mPASS[0m in 0.11s]
+[0m19:27:23.637211 [info ] [Thread-1 (]: 1 of 6 PASS not_null_stg_auth_events_action .................................... [[32mPASS[0m in 0.11s]
+[0m19:27:23.643211 [debug] [Thread-3 (]: SQL status: OK in 0.009 seconds
+[0m19:27:23.643211 [info ] [Thread-4 (]: 6 of 6 START test not_null_stg_auth_events_user_id ............................. [RUN]
+[0m19:27:23.644214 [debug] [Thread-2 (]: Finished running node test.logpulse.not_null_stg_auth_events_ip.759418a755
+[0m19:27:23.645211 [debug] [Thread-1 (]: Finished running node test.logpulse.not_null_stg_auth_events_action.1e15679799
+[0m19:27:23.645211 [debug] [Thread-3 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_user_agent.f556013c32"
+[0m19:27:23.645211 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.logpulse.not_null_stg_auth_events_ts.1db33bee50, now test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa)
+[0m19:27:23.646210 [debug] [Thread-3 (]: On test.logpulse.not_null_stg_auth_events_user_agent.f556013c32: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "test.logpulse.not_null_stg_auth_events_user_agent.f556013c32"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_agent
+from "logpulse"."main"."stg_auth_events"
+where user_agent is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:27:23.647212 [debug] [Thread-4 (]: Began compiling node test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa
+[0m19:27:23.651210 [debug] [Thread-4 (]: Writing injected SQL for node "test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa"
+[0m19:27:23.653209 [debug] [Thread-4 (]: Began executing node test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa
+[0m19:27:23.655209 [debug] [Thread-4 (]: Writing runtime sql for node "test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa"
+[0m19:27:23.656209 [debug] [Thread-4 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa"
+[0m19:27:23.656209 [debug] [Thread-4 (]: On test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa: BEGIN
+[0m19:27:23.656209 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:27:23.657210 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m19:27:23.657210 [debug] [Thread-4 (]: Using duckdb connection "test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa"
+[0m19:27:23.658211 [debug] [Thread-4 (]: On test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "logpulse_duckdb", "target_name": "dev", "node_id": "test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from "logpulse"."main"."stg_auth_events"
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:27:23.678210 [debug] [Thread-4 (]: SQL status: OK in 0.020 seconds
+[0m19:27:23.679209 [debug] [Thread-4 (]: On test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa: ROLLBACK
+[0m19:27:23.680214 [debug] [Thread-4 (]: Failed to rollback 'test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa'
+[0m19:27:23.681212 [debug] [Thread-4 (]: On test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa: Close
+[0m19:27:23.682212 [info ] [Thread-4 (]: 6 of 6 PASS not_null_stg_auth_events_user_id ................................... [[32mPASS[0m in 0.04s]
+[0m19:27:23.682212 [debug] [Thread-3 (]: SQL status: OK in 0.035 seconds
+[0m19:27:23.683210 [debug] [Thread-4 (]: Finished running node test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa
+[0m19:27:23.684212 [debug] [Thread-3 (]: On test.logpulse.not_null_stg_auth_events_user_agent.f556013c32: ROLLBACK
+[0m19:27:23.685211 [debug] [Thread-3 (]: Failed to rollback 'test.logpulse.not_null_stg_auth_events_user_agent.f556013c32'
+[0m19:27:23.685211 [debug] [Thread-3 (]: On test.logpulse.not_null_stg_auth_events_user_agent.f556013c32: Close
+[0m19:27:23.687211 [info ] [Thread-3 (]: 5 of 6 PASS not_null_stg_auth_events_user_agent ................................ [[32mPASS[0m in 0.07s]
+[0m19:27:23.688211 [debug] [Thread-3 (]: Finished running node test.logpulse.not_null_stg_auth_events_user_agent.f556013c32
+[0m19:27:23.689212 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:27:23.689212 [debug] [MainThread]: On master: BEGIN
+[0m19:27:23.689212 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:27:23.694209 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m19:27:23.695217 [debug] [MainThread]: On master: COMMIT
+[0m19:27:23.695217 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:27:23.695217 [debug] [MainThread]: On master: COMMIT
+[0m19:27:23.696210 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:27:23.696210 [debug] [MainThread]: On master: Close
+[0m19:27:23.698212 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:27:23.698212 [debug] [MainThread]: Connection 'list_logpulse_main' was properly closed.
+[0m19:27:23.698212 [debug] [MainThread]: Connection 'test.logpulse.not_null_stg_auth_events_action.1e15679799' was properly closed.
+[0m19:27:23.699212 [debug] [MainThread]: Connection 'test.logpulse.not_null_stg_auth_events_ip.759418a755' was properly closed.
+[0m19:27:23.699212 [debug] [MainThread]: Connection 'test.logpulse.not_null_stg_auth_events_user_agent.f556013c32' was properly closed.
+[0m19:27:23.699212 [debug] [MainThread]: Connection 'test.logpulse.not_null_stg_auth_events_user_id.8f0b5ac9fa' was properly closed.
+[0m19:27:23.699212 [info ] [MainThread]: 
+[0m19:27:23.700211 [info ] [MainThread]: Finished running 6 data tests in 0 hours 0 minutes and 0.29 seconds (0.29s).
+[0m19:27:23.701211 [debug] [MainThread]: Command end result
+[0m19:27:23.712209 [debug] [MainThread]: Wrote artifact WritableManifest to transform\dbt\target\manifest.json
+[0m19:27:23.714211 [debug] [MainThread]: Wrote artifact SemanticManifest to transform\dbt\target\semantic_manifest.json
+[0m19:27:23.719210 [debug] [MainThread]: Wrote artifact RunExecutionResult to transform\dbt\target\run_results.json
+[0m19:27:23.719210 [info ] [MainThread]: 
+[0m19:27:23.719210 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:27:23.720210 [info ] [MainThread]: 
+[0m19:27:23.720210 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m19:27:23.721210 [debug] [MainThread]: Command `dbt test` succeeded at 19:27:23.721210 after 0.98 seconds
+[0m19:27:23.722211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C143E69F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C111FE000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C136D1D30>]}
+[0m19:27:23.722211 [debug] [MainThread]: Flushing usage events
+[0m19:27:24.045809 [debug] [MainThread]: An error was encountered while trying to flush usage events

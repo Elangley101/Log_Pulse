@@ -13,7 +13,7 @@ def main():
     with open(path, "w") as f:
         for _ in range(args.events):
             event = {
-                "ts": datetime.datetime.utcnow().isoformat()+"Z",
+                "ts": datetime.datetime.now(datetime.UTC).isoformat().replace("+00:00", "Z"),
                 "user_id": f"user_{random.randint(1,50)}",
                 "ip": random.choice(ips),
                 "user_agent": random.choice(uas),

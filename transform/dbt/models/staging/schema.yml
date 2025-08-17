@@ -18,6 +18,12 @@ models:
       - name: user_agent
         tests: [not_null]
       - name: action
-        tests: [not_null]
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["login"]
       - name: result
-        tests: [not_null]
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["success", "fail"]
