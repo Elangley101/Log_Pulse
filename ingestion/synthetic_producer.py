@@ -1,4 +1,4 @@
-import argparse, os, json, random, time, datetime
+import argparse, os, json, random, datetime
 
 def main():
     p = argparse.ArgumentParser()
@@ -11,7 +11,7 @@ def main():
     uas = ["Mozilla/5.0", "Chrome/129", "Safari/17"]
     ips = ["1.2.3.4","5.6.7.8","9.9.9.9","8.8.8.8"]
     with open(path, "w") as f:
-        for i in range(args.events):
+        for _ in range(args.events):
             event = {
                 "ts": datetime.datetime.utcnow().isoformat()+"Z",
                 "user_id": f"user_{random.randint(1,50)}",

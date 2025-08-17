@@ -1,4 +1,7 @@
 # ADR-001: Local Warehouse is DuckDB
+Status: Accepted (M1)
+Date: 2025-01-01
+
 ## Context
 For a local, low-friction demo and development workflow, we need an embedded analytical database with minimal setup and strong SQL and columnar performance.
 
@@ -8,6 +11,10 @@ Adopt DuckDB as the local warehouse for M1. dbt-duckdb will be used for modeling
 ## Consequences
 - Pros: zero external dependency, fast columnar analytics, easy file I/O (Parquet/CSV/NDJSON via staging), great for CI/local.
 - Cons: single-file DB, no concurrent writer support for multi-service writes; future scale requires migration.
+
+## Notes for M1
+- DuckDB file path configured via `${DUCKDB_PATH}`.
+- dbt profiles configured for local DuckDB target.
 
 ## Alternatives
 - SQLite: poor for analytics; limited columnar performance.

@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: lake
+    schema: main
+    tables:
+      - name: auth_events
+
+models:
+  - name: stg_auth_events
+    columns:
+      - name: ts
+        tests: [not_null]
+      - name: user_id
+        tests: [not_null]
+      - name: ip
+        tests: [not_null]
+      - name: user_agent
+        tests: [not_null]
+      - name: action
+        tests: [not_null]
+      - name: result
+        tests: [not_null]

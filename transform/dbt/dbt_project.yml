@@ -1,0 +1,14 @@
+name: logpulse
+version: 1.0.0
+config-version: 2
+profile: logpulse_duckdb
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  logpulse:
+    +materialized: view
+
+seeds:
+  logpulse:
+    +quote_columns: false
