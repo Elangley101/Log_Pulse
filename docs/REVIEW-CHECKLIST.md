@@ -1,0 +1,7 @@
+- [ ] Matches M1 scope (local demo only)
+- [ ] README quickstart works end-to-end
+- [ ] `make setup` ok; `make run` ok; `bash scripts/dev_bootstrap.sh` ok
+- [ ] `pytest` passes; dbt placeholder present
+- [ ] No secrets committed; `.env.sample` present
+- [ ] ADRs added: 001 warehouse, 002 queue
+- [ ] Streamlit accessible on 8501
