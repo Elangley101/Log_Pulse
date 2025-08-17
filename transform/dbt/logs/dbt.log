@@ -1,0 +1,38 @@
+[0m19:05:38.563064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214BE5C73E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214BE3D1EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214BBFCCFB0>]}
+
+
+============================== 19:05:38.568064 | f78f68c2-98c5-441c-bcea-5fb474036e43 ==============================
+[0m19:05:38.568064 [info ] [MainThread]: Running with dbt=1.6.0
+[0m19:05:38.568064 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\elang\\Desktop\\netlfix-behavior-pipeline\\Log_Pulse\\transform\\dbt\\logs', 'profiles_dir': 'C:\\Users\\elang\\Desktop\\netlfix-behavior-pipeline\\Log_Pulse\\transform\\dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt deps --project-dir C:\\Users\\elang\\Desktop\\netlfix-behavior-pipeline\\Log_Pulse\\transform\\dbt', 'send_anonymous_usage_stats': 'True'}
+[0m19:05:38.623065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f78f68c2-98c5-441c-bcea-5fb474036e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214BE5E00E0>]}
+[0m19:05:38.624064 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:05:38.625065 [debug] [MainThread]: Command `dbt deps` succeeded at 19:05:38.625065 after 0.09 seconds
+[0m19:05:38.626065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214BE5B8860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214BE5E00E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214BE271640>]}
+[0m19:05:38.626065 [debug] [MainThread]: Flushing usage events
+[0m19:05:41.063465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DED3AAF00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DED3AB110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DED3AACC0>]}
+
+
+============================== 19:05:41.066467 | 07f81628-d5b6-4a15-84c7-101f04afc242 ==============================
+[0m19:05:41.066467 [info ] [MainThread]: Running with dbt=1.6.0
+[0m19:05:41.067466 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\elang\\Desktop\\netlfix-behavior-pipeline\\Log_Pulse\\transform\\dbt\\logs', 'profiles_dir': 'C:\\Users\\elang\\Desktop\\netlfix-behavior-pipeline\\Log_Pulse\\transform\\dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt seed --project-dir C:\\Users\\elang\\Desktop\\netlfix-behavior-pipeline\\Log_Pulse\\transform\\dbt', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:05:41.070467 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m19:05:41.070467 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "logpulse_duckdb", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m19:05:41.071466 [debug] [MainThread]: Command `dbt seed` failed at 19:05:41.071466 after 0.04 seconds
+[0m19:05:41.071466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DED335E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DED2B3740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DED2B0D70>]}
+[0m19:05:41.071466 [debug] [MainThread]: Flushing usage events
+[0m19:18:04.621459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95F67D6A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95C98CB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95ED7C860>]}
+
+
+============================== 19:18:04.624459 | 251c6f40-a9ae-43da-8112-dfa27102f4e8 ==============================
+[0m19:18:04.624459 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:18:04.625458 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt deps --project-dir transform/dbt', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': 'transform\\dbt\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\elang\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m19:18:04.722465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '251c6f40-a9ae-43da-8112-dfa27102f4e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9608872F0>]}
+[0m19:18:04.745903 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:18:04.746909 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:18:04.747902 [debug] [MainThread]: Command `dbt deps` succeeded at 19:18:04.747902 after 0.22 seconds
+[0m19:18:04.748903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95F67D6A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95F67D910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F95F1474A0>]}
+[0m19:18:04.748903 [debug] [MainThread]: Flushing usage events
+[0m19:18:05.120191 [debug] [MainThread]: An error was encountered while trying to flush usage events

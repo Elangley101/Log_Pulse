@@ -8,14 +8,23 @@ services:
     build: ./ingestion
     env_file: .env
     depends_on: [kafka]
+    volumes:
+      - ./lake:/app/lake
+      - ./.data:/app/.data
 
   detection:
     build: ./detection
     env_file: .env
     depends_on: [ingestion]
+    volumes:
+      - ./lake:/app/lake
+      - ./.data:/app/.data
 
   dashboard:
     build: ./serving
     env_file: .env
     ports: ["8501:8501"]
     depends_on: [detection]
+    volumes:
+      - ./lake:/app/lake
+      - ./.data:/app/.data

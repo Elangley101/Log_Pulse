@@ -4,6 +4,13 @@ version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = ["pydantic>=2.7.0","requests>=2.32.0"]
 
+[tool.setuptools]
+packages = ["detection", "ingestion", "transform", "serving", "observability"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [tool.ruff]
 line-length = 100
 

@@ -1,5 +1,6 @@
 import os
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -16,12 +17,14 @@ def main() -> None:
     env = os.environ.copy()
     env["DBT_PROFILES_DIR"] = str(profiles_dir)
 
+    py = sys.executable
+
     # Install dependencies (none yet, but safe)
-    run(["dbt", "deps", "--project-dir", str(project_dir)], env)
+    run([py, "-m", "dbt", "deps", "--project-dir", str(project_dir)], env)
     # Load seeds, run models, then tests
-    run(["dbt", "seed", "--project-dir", str(project_dir)], env)
-    run(["dbt", "run", "--project-dir", str(project_dir)], env)
-    run(["dbt", "test", "--project-dir", str(project_dir)], env)
+    run([py, "-m", "dbt", "seed", "--project-dir", str(project_dir)], env)
+    run([py, "-m", "dbt", "run", "--project-dir", str(project_dir)], env)
+    run([py, "-m", "dbt", "test", "--project-dir", str(project_dir)], env)
 
 
 if __name__ == "__main__":
