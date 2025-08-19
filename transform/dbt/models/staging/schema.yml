@@ -27,3 +27,13 @@ models:
           - not_null
           - accepted_values:
               values: ["success", "fail"]
+  - name: alerts
+    description: Persisted detections from rules
+    columns:
+      - name: ts
+      - name: message
+  - name: analyst_recommendations
+    description: Analyst notes
+    columns:
+      - name: ts
+      - name: note

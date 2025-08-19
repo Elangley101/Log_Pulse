@@ -51,7 +51,7 @@ Small teams need a low-cost, local-first way to detect risky authentication beha
 
 ## Assumptions & Dependencies
 - Python 3.11, Docker/Docker Compose available locally.
-- Env vars configured via `.env` or shell: `KAFKA_BROKER`, `DUCKDB_PATH`, `SLACK_WEBHOOK_URL`, optional `STREAMLIT_PORT` (default `8501`).
+- Env vars configured via `.env` or shell: `KAFKA_BROKER`, `DUCKDB_PATH`, `SLACK_WEBHOOK_URL`, optional `STREAMLIT_PORT` (default `8501`). `.env.sample` provided.
 
 ## Milestones
 - M1 (this PRD): local demo as defined above.

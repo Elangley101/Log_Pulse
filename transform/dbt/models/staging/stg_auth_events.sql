@@ -2,7 +2,7 @@
 
 WITH raw AS (
   SELECT *
-  FROM read_json_auto('lake/raw/auth_events_v1.ndjson')
+  FROM read_json_auto('../../lake/raw/auth_events_v1.ndjson')
 )
 SELECT
   ts,

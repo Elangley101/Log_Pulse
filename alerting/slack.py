@@ -1,6 +1,7 @@
 from __future__ import annotations
 import os
 import json
+import logging
 from typing import Any
 
 import requests
@@ -13,8 +14,7 @@ def post_slack_message(text: str, **blocks: Any) -> bool:
     """
     webhook = os.getenv("SLACK_WEBHOOK_URL", "").strip()
     if not webhook:
-        # No webhook configured; skip silently and return False
-        print("[slack] SLACK_WEBHOOK_URL not set; skipping alert")
+        logging.info("slack_disabled reason=%s", "no_webhook")
         return False
     payload = {"text": text}
     if blocks:
@@ -23,8 +23,8 @@ def post_slack_message(text: str, **blocks: Any) -> bool:
         resp = requests.post(webhook, data=json.dumps(payload), headers={"Content-Type": "application/json"}, timeout=10)
         if resp.status_code >= 200 and resp.status_code < 300:
             return True
-        print(f"[slack] webhook responded {resp.status_code}: {resp.text}")
+        logging.warning("slack_non_2xx status=%s body=%s", resp.status_code, resp.text)
         return False
     except Exception as exc:  # noqa: BLE001 (simple edge reporting ok)
-        print(f"[slack] error sending alert: {exc}")
+        logging.error("slack_error error=%s", exc)
         return False

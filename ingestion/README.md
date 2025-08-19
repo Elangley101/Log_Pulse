@@ -1,2 +1,2 @@
 # ingestion
-Synthetic producers + consumer writing Parquet files to /lake/.
+Synthetic producers. For M1, writes NDJSON to `lake/raw/`. Kafka publish/consume planned.

@@ -3,28 +3,126 @@ services:
     image: redpanda/redpanda:v24.1.5
     command: ["redpanda","start","--overprovisioned","--smp","1","--reserve-memory","0M","--set","redpanda.auto_create_topics_enabled=true","--check=false"]
     ports: ["9092:9092","9644:9644"]
+    healthcheck:
+      test: ["CMD-SHELL", "rpk cluster info --brokers=localhost:9092 >/dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1g
 
   ingestion:
     build: ./ingestion
     env_file: .env
-    depends_on: [kafka]
+    depends_on:
+      kafka:
+        condition: service_healthy
     volumes:
       - ./lake:/app/lake
       - ./.data:/app/.data
+    healthcheck:
+      test: ["CMD-SHELL", "python - <<'PY'\nimport os,sys\npath='lake/raw/' + os.getenv('KAFKA_TOPIC','auth.events.v1').replace('.','_') + '.ndjson'\nsys.exit(0 if os.path.exists(path) else 1)\nPY"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  producer:
+    build: ./ingestion
+    env_file: .env
+    depends_on:
+      kafka:
+        condition: service_healthy
+    command: ["python","synthetic_producer.py","--events","20000","--topic","auth.events.v1","--rate","500"]
+    volumes:
+      - ./lake:/app/lake
+      - ./.data:/app/.data
+    restart: on-failure
+
+  transform:
+    build: ./transform
+    env_file: .env
+    depends_on:
+      ingestion:
+        condition: service_started
+    volumes:
+      - ./lake:/app/lake
+      - ./.data:/app/.data
+    environment:
+      - DUCKDB_PATH=${DUCKDB_PATH:-.data/logpulse.duckdb}
+    healthcheck:
+      test: ["CMD-SHELL", "python - <<'PY'\nimport os,duckdb,sys\ntry:\n  con=duckdb.connect(os.getenv('DUCKDB_PATH','.data/logpulse.duckdb'))\n  con.execute('select 1').fetchone()\n  con.close()\n  sys.exit(0)\nexcept Exception as e:\n  sys.exit(1)\nPY"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
 
   detection:
     build: ./detection
     env_file: .env
-    depends_on: [ingestion]
+    depends_on:
+      transform:
+        condition: service_started
     volumes:
       - ./lake:/app/lake
       - ./.data:/app/.data
+    environment:
+      - DUCKDB_PATH=${DUCKDB_PATH:-.data/logpulse.duckdb}
+      - BRUTE_WINDOW_MIN=${BRUTE_WINDOW_MIN:-2}
+      - BRUTE_THRESHOLD=${BRUTE_THRESHOLD:-5}
+      - IMPOSSIBLE_TRAVEL_WINDOW_MIN=${IMPOSSIBLE_TRAVEL_WINDOW_MIN:-15}
+      - SPRAY_WINDOW_MIN=${SPRAY_WINDOW_MIN:-5}
+      - SPRAY_MIN_USERS=${SPRAY_MIN_USERS:-10}
+      - SPRAY_MAX_ATTEMPTS_PER_USER=${SPRAY_MAX_ATTEMPTS_PER_USER:-3}
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import os,duckdb; duckdb.connect(os.getenv('DUCKDB_PATH','.data/logpulse.duckdb')).close()\""]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512m
+
+  analyst:
+    build: ./analyst
+    env_file: .env
+    depends_on:
+      transform:
+        condition: service_started
+    command: ["python","service.py"]
+    environment:
+      - DUCKDB_PATH=${DUCKDB_PATH:-.data/logpulse.duckdb}
+      - ENABLE_AI_ASSIST=${ENABLE_AI_ASSIST:-false}
+    volumes:
+      - ./.data:/app/.data
+    restart: unless-stopped
 
   dashboard:
     build: ./serving
     env_file: .env
     ports: ["8501:8501"]
-    depends_on: [detection]
+    depends_on:
+      transform:
+        condition: service_started
     volumes:
       - ./lake:/app/lake
       - ./.data:/app/.data
+    environment:
+      - DUCKDB_PATH=${DUCKDB_PATH:-.data/logpulse.duckdb}
+    healthcheck:
+      test: ["CMD-SHELL", "python - <<'PY'\nimport urllib.request, sys\ntry:\n  urllib.request.urlopen('http://localhost:8501/', timeout=3).read()\n  sys.exit(0)\nexcept Exception:\n  sys.exit(1)\nPY"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512m

@@ -2,10 +2,17 @@
 name = "logpulse"
 version = "0.1.0"
 requires-python = ">=3.11"
-dependencies = ["pydantic>=2.7.0","requests>=2.32.0"]
+dependencies = [
+    "requests==2.32.*",
+    "duckdb==1.1.*",
+    "streamlit==1.37.*",
+    "dbt-core==1.10.*",
+    "dbt-duckdb==1.10.*",
+    "kafka-python==2.0.2"
+]
 
 [tool.setuptools]
-packages = ["detection", "ingestion", "transform", "serving", "observability"]
+packages = ["detection", "ingestion", "transform", "serving", "observability", "analyst", "alerting"]
 
 [build-system]
 requires = ["setuptools>=68", "wheel"]
@@ -18,3 +25,10 @@ line-length = 100
 python_version = "3.11"
 ignore_missing_imports = true
 strict = false
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.*",
+    "ruff==0.5.*",
+    "mypy==1.10.*"
+]

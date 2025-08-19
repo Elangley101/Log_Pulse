@@ -73,7 +73,7 @@ sequenceDiagram
 - Dashboard: Streamlit on `${STREAMLIT_PORT:-8501}`.
 
 ## Configuration (env)
-- `KAFKA_BROKER`: Kafka/Redpanda bootstrap servers (e.g., `localhost:19092`).
+- `KAFKA_BROKER`: Kafka/Redpanda bootstrap servers (e.g., `localhost:9092`).
 - `DUCKDB_PATH`: path to local DuckDB file (e.g., `./warehouse/logpulse.duckdb`).
 - `SLACK_WEBHOOK_URL`: Slack Incoming Webhook URL.
 - `STREAMLIT_PORT` (optional, default `8501`).

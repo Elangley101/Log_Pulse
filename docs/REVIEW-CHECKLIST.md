@@ -13,3 +13,10 @@ Implementation specifics (M1):
 - [ ] dbt has ≥6 tests (not_null, accepted_values, uniqueness where applicable)
 - [ ] Windows support: `scripts/dev_bootstrap.ps1` exists or README documents Git Bash/WSL path
 - [ ] NDJSON fallback works; Kafka optional and documented
+Production-ready (baseline):
+- [ ] All runtime deps pinned in `pyproject.toml`; Dockerfiles install via `pip install .`
+- [ ] Dashboard and detection read from DuckDB, not raw NDJSON
+- [ ] `transform` service present; Compose dependency chain correct
+- [ ] `.env.sample` exists and is referenced in docs
+- [ ] CI runs ruff, mypy, pytest, dbt run/test on PRs
+- [ ] Healthchecks or basic start-up validation for services
